@@ -21,6 +21,13 @@ namespace Chapter.Singleton {
         }
 
         void OnGUI() {
+            GUILayout.BeginArea(new Rect(0, 0, Screen.width, Screen.height));
+
+            GUILayout.BeginHorizontal();
+            GUILayout.FlexibleSpace();
+
+            GUILayout.BeginVertical();
+            
             GUI.backgroundColor = Color.white;
             if (GUILayout.Button("Next Scene", GUILayout.Width(80), GUILayout.Height(80))) {
                 if (SceneManager.GetActiveScene().buildIndex == SceneManager.sceneCountInBuildSettings - 1) {
@@ -30,6 +37,10 @@ namespace Chapter.Singleton {
                     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
                 }
             }
+
+            GUILayout.EndVertical();
+            GUILayout.EndHorizontal();
+            GUILayout.EndArea();
         }
     }
 }
