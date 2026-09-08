@@ -5,14 +5,17 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Scene 1.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Scene 2.unity
     guid: 08d2857aad30fdb4fbc162fd2e8827b8
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Scene 3.unity
     guid: ff81c5412e275da499d8808c398c08e9
+  - enabled: 1
+    path: Assets/Scenes/Nystrom's Heroine FSM.unity
+    guid: 38abfdb5f3ead2c45bbb205dc4a26d6a
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
